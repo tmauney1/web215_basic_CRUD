@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  h1 Extra Help Tutoring
+  p "A little extra help, lots of improvement"
+
+  // Wrapper
+  #wrapper
+
+    // USER LIST
+    h2 Student List
+    #userList
+      table
+        thead
+          th Student Name
+          th Subject
+          th Time
+          th Delete?
+        tbody
+    // /USER LIST
+    // USER INFO
+    #userInfo
+      h2 Student Info
+      p
+        strong Name:
+        |  <span id='studentInfoName'></span>
+        br
+        strong Age:
+        |  <span id='studentInfoAge'></span>
+        br
+        strong Gender:
+        |  <span id='studentInfoGender'></span>
+        br
+        strong Location:
+        |  <span id='studentInfoLocation'></span>
+    // /USER INFO
+    // ADD USER
+    h2 Add Student
+    #addUser
+      fieldset
+        input#inputStudentName(type='text', placeholder='Student Name')
+        input#inputSubject(type='text', placeholder='Subject')
+        input#inputTime(type='text', placeholder='Time')
+        br
+        input#inputParentName(type='text', placeholder='Parent Name')
+        input#inputUserAge(type='text', placeholder='Age')
+        br
+        input#inputUserLocation(type='text', placeholder='Location')
+        input#inputUserGender(type='text', placeholder='gender')
+        br
+        button#btnAddUser Add User
+    // /ADD USER
+  // /WRAPPER
